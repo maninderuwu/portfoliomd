@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDportfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      .navba {
+          overflow: hidden;
+          background-color: rgb(2, 5, 38);
+          text-align: right; /* Align text to the left */
+      }
+      
+      .navba a {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 25px;
+          text-decoration: none;
+          font-size: 16px;
+          color: rgb(231, 223, 223);
+      }
+      
+      .navba a:hover {
+          background-color: rgb(231, 223, 223);
+          color: rgb(2, 5, 38);
+      }
+      
+      .carousel {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+      }
+      
+      .left-section, .right-section {
+          width: 45%; /* Adjust as needed */
+      }
+      
+      .left-section {
+          background-color: rgb(2, 5, 38);
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .welcome-section {
+          text-align: center;
+      }
+      
+      .right-section {
+          background-color: rgb(2, 5, 38);
+          padding: 20px;
+      }
+      
+      .skills {
+          display: flex;
+          flex-direction: column;
+      }
+      
+      .skill {
+          margin-bottom: 20px;
+      }
+      
+      .skill h3 {
+          margin-bottom: 10px;
+      }
+      
+      .skill ul {
+          list-style-type: none;
+          padding: 0;
+      }
+      
+      .skill ul li {
+          margin-bottom: 5px;
+      }
+      
+      .card-body {
+          padding: 1.25rem;
+      }
+      
+      /* Media query for smaller screens */
+      @media (max-width: 767px) {
+          .carousel {
+              flex-direction: column;
+              align-items: center;
+          }
+      
+          .left-section, .right-section {
+              width: 100%;
+              margin-bottom: 20px;
+          }
+      
+          .skills {
+              font-size: 0.8rem; /* Adjust font size as needed */
+          }
+      
+          .welcome-section {
+              text-align: center;
+          }
+      }
+      
+      </style>
+      
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navba">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+    <div class="container-fluid" style="background-color:rgb(2, 5, 38) ; margin-top: 40px; padding-bottom: 70px;">
+    <div class="carousel" id="home" style="padding-top: 40px;">
+      <div class="left-section">
+        <div class="welcome-section">
+          <h1 style="color: white; text-align: left;" >Welcome!</h1>
+          <p style="color: white; font-size: 1.2rem;">My name is Maninderdeep Singh. I am a Python developer.</p>
+        </div>
+      </div>
+      <div class="right-section">
+        <h2 style="color: white; padding-bottom: 10px;" >Languages</h2>
+        <div class="skills">
+          <div class="skill ">
+            <h3 style="color: white; padding-bottom: 10px;" >Front-end &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Back-end</h3>
+            <ul>
+              <li style="color: white;">HTML &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Python</li>
+              <li style="color: white;">CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Django</li>
+              
+            </ul>
+          </div>
+          <div class="skill">
+            <h3 style="color: white; padding-bottom: 10px;">Back-end</h3>
+            <ul>
+              <li style="color: white;">Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+    <!--about-->
+    <div class="container" id="about" style="padding-top: 20px;" >
+     <div class="row">
+       <div class="col-md-12">
+         <div class="about-me" style="margin-top: 20px; padding-top: 20px;">
+           <h1>About me</h1>
+           <p style="font-size: 1.2rem;">Hello, I'm Maninderdeep Singh. I'm a passionate web developer with expertise in Python, Django, HTML, CSS, and Bootstrap. I enjoy turning complex problems into simple, beautiful, and intuitive solutions. I'm constantly learning and exploring new technologies to stay updated with the latest trends in web development. Feel free to explore my portfolio to see some of my projects or reach out to me if you have any questions or opportunities for collaboration.</p>
+         </div>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-md-6 ">
+         <div class="my-skills">
+           <h2 style="font-size: 1.8rem; margin-top: 8px;">My Skills</h2>
+           <ol style="font-size: 1.2rem;">
+             <li>Fast Learner</li>
+             <li>Creativity</li>
+             <li>Time management skills</li>
+             <li>Adaptability to change environment</li>
+             <li> Logical thinking</li>
+           </ol>
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   
+   <!-- project -->
+   
+   <div class="container" id="projects" style="padding-top: 40px; margin-top: 20px;">
+     <h2 style="color: rgb(2, 5, 38); font-size: 2.5rem; margin-top: 20px;">Projects</h2>
+     <div class="row">
+       
+       <div class="card mb-4" style="max-width: 540px; margin: 10px; padding: 10px; border-top-left-radius: 30px; border-bottom-right-radius: 30px; ">
+         <div class="card-body">
+           <h5 class="card-title">Madaan's villa</h5>
+           <p class="card-text">this project is a E commerce shopping site. which have both men and women clothes</p>
+         </div>
+       </div>
+       <div class="card mb-4" style="max-width: 540px; margin: 10px; padding: 10px; border-top-left-radius: 30px; border-bottom-right-radius: 30px; ">
+        <div class="card-body">
+          <h5 class="card-title">To-do list</h5>
+          <p class="card-text">it is our daily life task based project. here you can insert your everyday tasks and even delete it after completes</p>
+        </div>
+      </div>
+      <div class="card mb-4" style="max-width: 540px; margin: 10px; padding: 10px; border-top-left-radius: 30px; border-bottom-right-radius: 30px; ">
+        <div class="card-body">
+          <h5 class="card-title">Fire fitness Hub</h5>
+          <p class="card-text">this is gym promotion site. it includes information about gym, its gallery and trainers</p>
+        </div>
+      </div>
+      <div class="card mb-4" style="max-width: 540px; margin: 10px; padding: 10px; border-top-left-radius: 30px; border-bottom-right-radius: 30px; ">
+        <div class="card-body">
+          <h5 class="card-title">MD cms</h5>
+          <p class="card-text">this is blog or articles post site. here you can post any articles you want and even post your daily life blogs</p>
+        </div>
+      </div>
+     </div>
+   </div>
+   
+   <!--contact-->
+   <div class="container" id="contact" style="padding-top: 20px; margin-top: 20px;">
+     <h2 style="color: rgb(2, 5, 38); font-size: 2.5rem; margin-top: 20px;">Contact me</h2>
+     <div class="row" style="margin-top: 20px; padding-left:10px; margin-bottom: 20px;">
+       <div class="col-md-6">
+         <h4>Contact Information</h4>
+         <p><strong>Email:</strong> maninderdeepsingh@gmail.com</p>
+         <p><strong>Phone:</strong> +91 75288 76756</p>
+         <p><strong>Address:</strong> Ludhiana, Punjab </p>
+       </div>
+       <div class="col-md-6" >
+         <h4>Links</h4>
+         <p><a href="https://www.instagram.com/maninder_1510?igsh=MzRlODBiNWFlZA%3D%3D" style="text-decoration: none;"><strong>Instagram</strong></a></p>
+         <p><a href="https://github.com/maninderuwu/mdprojects" style="text-decoration: none;"><strong>GitHub</strong></a></p>
+       </div>
+     </div>
+   </div>
+   <!--footer-->
+   
+   <footer class="footer">
+     <div class="container-fluid" style="background-color: rgb(2, 5, 38);">
+       <div style="padding: 50px;">
+         <h6 align="center" style="color: rgb(248, 234, 234);">And thats it!!!</h6>
+     </div>
+   </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
